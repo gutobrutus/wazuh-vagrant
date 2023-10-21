@@ -1,0 +1,21 @@
+---
+- name: wazuh-server
+  box: ubuntu/jammy64
+  hostname: wz-server
+  ipaddress: 192.168.56.80
+  memory: 4096
+  cpus: 2
+
+- name: wazuh-indexer
+  box: ubuntu/jammy64
+  hostname: wz-indexer
+  ipaddress: 192.168.56.81
+  memory: 4096
+  cpus: 2
+
+- name: wazuh-dashboard
+  box: ubuntu/jammy64
+  hostname: wz-dashboard
+  ipaddress: 192.168.56.82
+  memory: 4096
+  cpus: 2
